@@ -17,7 +17,7 @@ function App() {
         <Link to="/" style={{ marginRight: "1rem" }}>
           Home
         </Link>
-        <Link to="/test">Test Page</Link>
+        {/* <Link to="/test">Test Page</Link> */}
       </nav>
 
       <Routes>

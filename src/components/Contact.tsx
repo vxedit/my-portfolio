@@ -11,7 +11,7 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/irfansipai',
+      href: 'https://www.linkedin.com/in/irfan-sipai/',
       value: 'linkedin.com/in/irfansipai',
     },
     {
@@ -23,7 +23,7 @@ const Contact = () => {
     {
       icon: FileText,
       label: 'Resume',
-      href: 'https://flowcv.com/resume/your-link',
+      href: 'https://flowcv.com/resume/13sqbugpfm',
       value: 'View Live CV',
     },
   ];
@@ -71,7 +71,7 @@ const Contact = () => {
 
         <div className="mt-16 text-center">
           <p className="text-gray-500 text-sm">
-            © 2025 Irfan Sipai. Built with React, TypeScript & Tailwind CSS.
+            © 2025 Irfan Sipai. Built with React, TypeScript & Tailwind CSS, deployed at cloudflare & Vercel.
           </p>
         </div>
       </div>

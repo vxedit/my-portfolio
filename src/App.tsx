@@ -36,10 +36,10 @@ function App() {
       <Sidebar activeSection={activeSection} />
       <main className="ml-0 lg:ml-64">
         <Hero />
+        <About />
         <Projects />
         <TechStack />
         <Experience />
-        <About />
         <Contact />
       </main>
     </div>

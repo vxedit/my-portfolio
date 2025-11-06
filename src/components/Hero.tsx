@@ -38,7 +38,7 @@ const Hero = () => {
           </button>
 
           <a
-            href="https://flowcv.com/resume/your-link"
+            href="https://flowcv.com/resume/13sqbugpfm"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center space-x-2 px-8 py-4 bg-gray-800 hover:bg-gray-700 text-gray-100 font-semibold rounded-lg border border-gray-700 transition-all"

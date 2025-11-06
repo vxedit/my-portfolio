@@ -6,7 +6,7 @@ const TechStack = () => {
     },
     {
       title: 'Backend & Frameworks',
-      skills: ['Python', 'FastAPI', 'Flask', 'Django', 'Celery', 'Redis', 'WebSockets', 'Asynchronous Programming'],
+      skills: ['Python', 'FastAPI', 'Flask', 'Django', 'Celery', 'Redis', 'WebSockets'],
     },
     {
       title: 'DevOps & Databases',

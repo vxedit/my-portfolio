@@ -7,10 +7,10 @@ interface SidebarProps {
 const Sidebar = ({ activeSection }: SidebarProps) => {
   const sections = [
     { id: 'home', label: 'Home', icon: Home },
+    { id: 'about', label: 'About Me', icon: User },
     { id: 'projects', label: 'Projects', icon: Briefcase },
     { id: 'tech-stack', label: 'Tech Stack', icon: Code },
     { id: 'experience', label: 'Experience', icon: Award },
-    { id: 'about', label: 'About Me', icon: User },
     { id: 'contact', label: 'Contact', icon: Mail },
   ];
 

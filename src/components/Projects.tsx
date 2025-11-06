@@ -1,4 +1,7 @@
+// src/components/Projects.tsx
 import { ExternalLink, Github } from 'lucide-react';
+import faceRecImage from '/src/assets/face-rec-featured.jpg';
+import islImage from '/src/assets/isl-demo.gif';
 
 const Projects = () => {
   const projects = [
@@ -7,9 +10,9 @@ const Projects = () => {
       description:
         'Architected a scalable, multi-camera surveillance system from scratch. Re-engineered the AI pipeline to boost processing efficiency by 50%.',
       tags: ['FastAPI', 'Docker', 'PyTorch', 'Microservices', 'ONNX'],
-      image: '/architecture-diagram.png',
+      image: faceRecImage,
       links: {
-        readme: '#',
+        readme: 'https://github.com/irfansipai/face-rec-services',
       },
       featured: true,
     },
@@ -18,9 +21,9 @@ const Projects = () => {
       description:
         'Built a real-time app to detect and classify ISL gestures using MediaPipe, TensorFlow, and asynchronous Python for live speech output.',
       tags: ['Python', 'TensorFlow', 'MediaPipe', 'OpenCV', 'Concurrency'],
-      image: '/isl-demo.gif',
+      image: islImage,
       links: {
-        github: '#',
+        github: 'https://github.com/irfansipai/isl-sign-recognition',
       },
       featured: true,
     },
@@ -40,12 +43,21 @@ const Projects = () => {
               key={index}
               className="group bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-emerald-500 transition-all duration-300 transform hover:scale-105"
             >
-              <div className="aspect-video bg-gray-800 flex items-center justify-center relative overflow-hidden">
+              <div className="aspect-video bg-gray-800 relative overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              </div>
+
+              {/* <div className="aspect-video bg-gray-800 flex items-center justify-center relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 <div className="text-6xl text-gray-700">
                   {project.title.includes('Face') ? '🔍' : '👋'}
                 </div>
-              </div>
+              </div> */}
 
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-3 text-gray-100">
